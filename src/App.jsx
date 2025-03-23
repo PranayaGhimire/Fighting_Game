@@ -5,7 +5,7 @@ import useSound from 'use-sound';
 import punchSound from './assets/punch.wav'
 import kickSound from './assets/kick.wav'
 import healSound from './assets/heal.wav'
-import victorySound from './assets/victory.mp3'
+import victorySound from './assets/victory.wav'
 const App = () => {
   const [p1Health,setP1Health]=useState(100);
   const [p2Health,setP2Health]=useState(100);
