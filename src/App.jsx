@@ -114,9 +114,15 @@ const App = () => {
       <div className='flex flex-col space-y-3 items-center'>
             <h1 className='md:text-xl'>Player 1</h1>
             <img src={Goku} alt="Goku Image" className='w-50 h-50 rounded-lg animate-pulse' />
-            <p className='bg-blue-600 p-2 rounded-md text-center'>Q: Punch</p>
-            <p className='bg-red-700 p-2 rounded-b-md text-center'>S: Kick</p>
-            <p className='bg-green-600 p-2 rounded-lg text-center'>A: Heal</p>
+            <p
+            onClick={punchP2}
+            className='bg-blue-600 p-2 rounded-md text-center'>Q: Punch</p>
+            <p
+            onClick={kickP2}
+            className='bg-red-700 p-2 rounded-b-md text-center'>S: Kick</p>
+            <p 
+            onClick={healP1}
+            className='bg-green-600 p-2 rounded-lg text-center'>A: Heal</p>
             <p className={`${p1Health<=10 && 'bg-red-700 p-2 rounded-e-md' ||
                p1Health<=40 && 'bg-yellow-600 p-2 rounded-e-md' ||
                 p1Health>40 && 'bg-green-600 p-2 rounded-e-md'}`}>{`Health: ${p1Health}`}</p>
@@ -125,9 +131,15 @@ const App = () => {
         <div className='flex flex-col space-y-3 items-center'>
             <h1 className='md:text-xl'>Player 2</h1>
             <img src={Vegeta} alt="Vegeta Image" className='w-50 h-50  rounded-lg animate-pulse' />
-            <p className='bg-yellow-600 p-2 rounded-md text-center'>P: Punch</p>
-            <p className='bg-pink-600 p-2 rounded-b-md'>K: Kick</p>
-            <p className='bg-violet-600 p-2 rounded-lg text-center'>L: Heal</p>
+            <p
+            onClick={punchP1}
+            className='bg-yellow-600 p-2 rounded-md text-center'>P: Punch</p>
+            <p
+            onClick={kickP1}
+            className='bg-pink-600 p-2 rounded-b-md'>K: Kick</p>
+            <p
+            onClick={healP2}
+            className='bg-violet-600 p-2 rounded-lg text-center'>L: Heal</p>
              <p className={`${p2Health<=10 && 'bg-red-700 p-2 rounded-e-md' ||
                p2Health<=40 && 'bg-yellow-600 p-2 rounded-e-md' || 
                p2Health>40 && 'bg-green-600 p-2 rounded-e-md'}`}>{`Health: ${p2Health}`}</p>
